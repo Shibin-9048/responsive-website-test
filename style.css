@@ -1,0 +1,520 @@
+/* styles.css */
+
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+/* Hero section with full-screen background image */
+.hero {
+    background-image: url('https://img.freepik.com/free-photo/traveller-sitting-rock-holding-camera-take-photo-doi-pha-mon-mountains-chiang-rai-thailand_335224-1078.jpg?size=626&ext=jpg&ga=GA1.1.329853717.1722066359&semt=ais_hybrid'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    text-align: center;
+}
+
+/* Transparent navbar */
+.navbar {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Black with 50% transparency */
+    padding: 15px 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+    z-index: 100;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin-left: 30px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #ddd;
+}
+
+/* Hero content */
+.hero-content {
+    position: relative;
+    justify-content: center;
+    z-index: 1;
+    max-width: 800px;
+    padding: 20px;
+    backdrop-filter: blur(5px);
+}
+#head1{
+    font-family: "Dancing Script", cursive;
+}
+#head2{
+    font-family: "Dancing Script", cursive;
+}
+
+.hero-content h1 {
+    font-size: 4em;
+    margin: 0 0 20px 0;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    margin: 0 0 20px 0;
+}
+
+.hero-content .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.hero-content .btn:hover {
+    background-color: #e55b4e;
+}
+/* honeymoon packages */
+/* Content section styles */
+.content-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.content-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Gallery styles */
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery-item {
+    margin: 20px;
+    max-width: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item-info {
+    padding: 15px;
+    background-color: white;
+    text-align: left;
+}
+
+.gallery-item-info h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.gallery-item-info p {
+    font-size: 1em;
+    margin: 10px 0 0 0;
+}
+#download1{
+    background-color: rgb(50, 10, 228);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 20px;
+    font-size: large;
+}
+
+/* grid */
+/* north indian tours */
+/* Content section styles */
+.content-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+    
+}
+
+.content-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    
+}
+
+/* Grid container styles */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    
+}
+
+.grid-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    border: solid black;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.3s;
+}
+
+.grid-item:hover img {
+    opacity: 0.3;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.grid-item:hover .overlay {
+    opacity: 1;
+}
+
+.overlay-text {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+}
+
+.overlay-text h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.overlay-text p {
+    font-size: 1em;
+    margin: 10px 0 0 0;
+}
+
+/* our premium packages */
+
+/* Content section styles */
+.content-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+    
+}
+
+.content-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    
+}
+
+/* Gallery styles */
+.gallery1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.gallery-item1 {
+    margin: 20px;
+    max-width: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    background-color: #e6dfde;
+}
+
+.img1 {
+    width: 90%;
+    height: auto;
+    transition: transform 0.3s;
+    
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item-info {
+    padding: 15px;
+    background-color: white;
+    text-align: left;
+}
+
+.gallery-item-info h3 {
+    margin: 0;
+    font-size: 1.5em;
+    align-items: center;
+}
+
+
+#download1{
+    background-color: rgb(50, 10, 228);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 20px;
+    font-size: large;
+}
+
+/* customers love */
+.content-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.content-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Gallery styles */
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery-item2{
+    margin: 20px;
+    max-width: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.img3 {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item-info {
+    padding: 15px;
+    background-color: white;
+    text-align: left;
+}
+
+.gallery-item-info h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.gallery-item-info p {
+    font-size: 1em;
+    margin: 10px 0 0 0;
+}
+
+/* star */
+.container1{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.checked{
+    color:green;
+
+}
+#star1{
+    color: rgb(5, 5, 5);
+    
+}
+
+
+
+/* Contactstyles */
+
+.content-section12 {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: navy;
+    
+}
+
+.content-section h4 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Gallery styles */
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery-item2{
+    margin: 20px;
+    max-width: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    
+}
+
+.img3 {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item-info {
+    padding: 15px;
+    background-color: white;
+    text-align: left;
+}
+
+.gallery-item-info h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.gallery-item-info p {
+    font-size: 1em;
+    margin: 10px 0 0 0;
+}
+
+/* icon */
+#contact{
+    margin: 0px 8% 0px 8%;
+    
+}
+.iconCollection{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+}
+.brands{
+
+    color: rgb(248, 245, 245);
+    font-size: 1.8rem;
+}
+.icon:hover{
+    background-image: linear-gradient(to bottom right,white,black);
+}
+.icon:hover .brands{
+    color: rgb(10, 10, 10);
+    animation: rotate 3s;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(30deg);
+    }
+    20%{
+        transform: rotate(-30deg);
+    }
+    40%{
+        transform: rotate(30deg);
+    }
+    60%{
+        transform: rotate(-30deg);
+    }
+    80%{
+        transform: rotate(30deg);
+    }
+    100%{
+        transform: rotate(-30deg);
+    }
+
+    
+}
+li{
+    color: rgb(247, 134, 6);
+}
+.lists{
+    color: white;
+}
+ul{
+    list-style: none;
+}
+
+/* Footer styles */
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+}
