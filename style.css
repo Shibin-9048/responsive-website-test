@@ -15,7 +15,7 @@ body {
 
 /* Hero section with full-screen background image */
 .hero {
-    background-image: url('https://img.freepik.com/free-photo/traveller-sitting-rock-holding-camera-take-photo-doi-pha-mon-mountains-chiang-rai-thailand_335224-1078.jpg?size=626&ext=jpg&ga=GA1.1.329853717.1722066359&semt=ais_hybrid'); /* Replace with your image path */
+    background-image: url('./images/nils-nedel-ONpGBpns3cs-unsplash.jpg'); /* Replace with your image path */
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -65,6 +65,7 @@ body {
 
 /* Hero content */
 .hero-content {
+    margin-top: 150px;
     position: relative;
     justify-content: center;
     z-index: 1;
